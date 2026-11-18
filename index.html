@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#25252a">
+  <meta name="description" content="Kalkulator manfaat bisnis dan biaya layanan Dua Arah untuk tahun pertama dan berikutnya.">
+  <title>Dua Arah | Kalkulator Manfaat & Investasi</title>
+  <style>
+    :root{--ink:#172f38;--dark:#112e38;--teal:#087e70;--green:#0d8067;--muted:#657b82;--border:#e0e8e8;--bg:#f4f7f7;--soft:#eef7f4;--red:#b94f47;--white:#fff;--shadow:0 12px 35px rgba(13,48,61,.07)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-variant-numeric:tabular-nums}button,input{font:inherit}button{cursor:pointer}.wrap{max-width:1120px;margin:0 auto;padding:24px 22px 55px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:22px;flex-wrap:wrap}.identity{display:flex;align-items:center;gap:12px}.logo{display:grid;place-items:center;width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,#087e70,#143d46);color:white;font-size:22px;font-weight:900;letter-spacing:-3px;box-shadow:0 5px 15px #087e7026}.identity strong{display:block;font-size:13px;letter-spacing:.15em}.identity small{display:block;color:var(--muted);font-size:11px;letter-spacing:.025em}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:1px solid #d6e2e1;border-radius:10px;padding:9px 13px;background:#fff;color:var(--ink);font-size:12px;font-weight:750}.btn:hover{background:#f0f8f6}.btn.primary{background:var(--teal);border-color:var(--teal);color:#fff}.btn.primary:hover{background:#09695f}.hero{background:linear-gradient(120deg,#122e3a 0%,#15515b 100%);border-radius:22px;color:white;padding:30px 35px;box-shadow:var(--shadow)}.eyebrow{color:#9be3d7;font-weight:800;letter-spacing:.15em;text-transform:uppercase;font-size:10px}.hero h1{font-size:clamp(25px,3.3vw,39px);letter-spacing:-.04em;line-height:1.16;margin:9px 0 10px;max-width:750px}.hero p{color:#d1e2e1;max-width:780px;margin:0;font-size:13px}.hero-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:17px}.hero-meta span{background:#ffffff17;color:#e7f8f4;border:1px solid #ffffff24;border-radius:100px;padding:5px 10px;font-size:11px}.stage{display:grid;grid-template-columns:minmax(310px,.9fr) minmax(0,1.12fr);gap:18px;margin-top:20px;align-items:start}.panel{background:#fff;border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);overflow:hidden}.panel-head{padding:18px 22px 14px;border-bottom:1px solid var(--border)}.panel-head h2{font-size:17px;letter-spacing:-.025em;margin:0 0 4px}.panel-head p{font-size:12px;color:var(--muted);margin:0}.pad{padding:19px 22px}.group-title{display:flex;gap:8px;align-items:center;font-size:13px;font-weight:850;margin:0 0 12px}.bullet{background:#ddf2ed;color:#057567;font-size:11px;width:24px;height:24px;display:grid;place-items:center;border-radius:8px}.field{margin:15px 0 18px}.field:last-child{margin-bottom:0}.field-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:7px}.field label{font-size:12px;font-weight:720;line-height:1.3;max-width:65%}.input-wrap{display:flex;align-items:center;border:1px solid #dbe5e4;border-radius:10px;height:39px;overflow:hidden;background:#fbfdfd;min-width:127px;max-width:174px}.input-wrap:focus-within{outline:2px solid #a4e4d8;border-color:#49ae9f}.affix{display:flex;align-items:center;justify-content:center;padding:0 9px;height:100%;background:#f0f5f4;color:#75888d;font-size:11px}.input-wrap input{width:100%;min-width:0;padding:0 10px;text-align:right;font-size:13px;font-weight:800;color:#163740;border:0;background:transparent;outline:0}.input-wrap input::-webkit-inner-spin-button{-webkit-appearance:none}.input-wrap input[type=number]{-moz-appearance:textfield}.field input[type=range]{display:block;width:100%;height:7px;accent-color:var(--teal);margin-top:12px;cursor:pointer}.bounds{display:flex;justify-content:space-between;font-size:10px;color:#97a8ad;margin-top:4px}.sub{font-size:11px;color:var(--muted);margin:5px 0 0}.divide{height:1px;background:var(--border);margin:19px 0}.chip-row{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 8px}.chip{background:white;border:1px solid #dbe6e4;padding:7px 12px;border-radius:100px;font-size:11px;font-weight:750;color:#587079}.chip[aria-pressed=true]{background:#dcf3ed;color:#056c5c;border-color:#70c9b7}.advanced{border-top:1px solid var(--border);background:#fbfdfc}.advanced summary{cursor:pointer;padding:17px 22px;font-size:13px;font-weight:800;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:8px}.advanced summary::-webkit-details-marker{display:none}.advanced summary::after{content:'+';font-weight:700;font-size:20px;color:var(--teal);line-height:1}.advanced[open] summary::after{content:'−'}.advanced[open] summary{border-bottom:1px solid var(--border)}.advanced-intro{font-size:12px;color:var(--muted);margin:0 0 15px}.checkbox-line{display:flex;align-items:flex-start;gap:9px;font-size:12px;font-weight:730}.checkbox-line input{accent-color:var(--teal);margin-top:4px}.hide{display:none!important}.result-pad{padding:20px 22px}.lead-result{border:1px solid #c7e9dc;background:#eaf8f2;border-radius:15px;padding:19px}.lead-result span{color:#517367;font-size:11px;font-weight:750}.lead-result strong{display:block;font-size:clamp(25px,3vw,35px);color:#0b745d;letter-spacing:-.04em;margin:4px 0}.lead-result p{font-size:12px;color:#4b6b61;margin:0}.year-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}.year{padding:15px;border:1px solid var(--border);border-radius:13px}.year .year-tag{font-size:10px;font-weight:800;color:#0b7668;text-transform:uppercase;letter-spacing:.1em}.year h3{font-size:16px;margin:3px 0}.year .number{font-size:clamp(20px,2.5vw,27px);font-weight:850;letter-spacing:-.035em;overflow-wrap:anywhere}.year .caption{font-size:11px;color:var(--muted);margin-top:5px}.year .line{height:1px;background:var(--border);margin:12px 0}.year .net{font-size:14px;font-weight:800}.positive{color:#08765b!important}.negative{color:#b64e46!important}.muted{color:var(--muted)}.highlight{background:#f4f9f7;border:1px solid #e2ece6;border-radius:13px;padding:15px;margin-top:13px}.highlight .name{font-size:11px;color:#607a73;font-weight:750}.highlight .value{font-size:clamp(20px,2.9vw,27px);font-weight:850;letter-spacing:-.035em;margin:5px 0}.highlight p{font-size:11px;color:#68827a;margin:0}.interpret{border-left:3px solid #0b8a73;background:#f2f9f7;border-radius:0 9px 9px 0;padding:12px 14px;margin-top:15px;font-size:12px;color:#43635b}.interpret strong{color:var(--ink)}.mini-chart{margin-top:15px}.barline{margin:11px 0}.bar-title{display:flex;justify-content:space-between;gap:6px;font-size:11px;font-weight:700}.bar-track{height:10px;width:100%;background:#eaf0ef;border-radius:99px;overflow:hidden;margin-top:6px}.bar-val{height:100%;border-radius:99px;transition:width .2s;background:var(--teal)}.bar-val.money{background:#8ca5b7}.section-label{margin:0;font-size:12px;font-weight:850}.small-detail{margin-top:15px;border-top:1px solid var(--border)}.small-detail summary{cursor:pointer;padding:13px 0;color:#54716e;font-size:12px;font-weight:780}.small-detail .detail-content{font-size:12px;color:#576e74;padding-bottom:4px}.calc-table{width:100%;border-collapse:collapse}.calc-table td{border-bottom:1px solid #edf1f0;padding:9px 0}.calc-table td:last-child{text-align:right;font-weight:800;color:var(--ink)}.calc-table tr:last-child td{border-bottom:0}.fine{font-size:11px;color:var(--muted)}.below{margin-top:19px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:11px}.tile{padding:17px 18px}.tile strong{font-size:12px;display:block;margin-bottom:5px}.tile p{font-size:11px;color:var(--muted);margin:0}.footnote{margin-top:17px;background:#eaf0f0;border:1px solid #dce6e6;border-radius:13px;padding:14px 17px;color:#5b7076;font-size:11px}.footer{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:10px;color:#82969c;margin-top:17px}
+    @media(max-width:790px){.wrap{padding:15px 13px 36px}.hero{padding:26px 22px;border-radius:18px}.stage{grid-template-columns:1fr}.below{grid-template-columns:1fr}.panel-head,.pad,.result-pad{padding-left:17px;padding-right:17px}.advanced summary{padding-left:17px;padding-right:17px}.top{margin-bottom:14px}}@media(max-width:440px){.year-grid{grid-template-columns:1fr}.field label{max-width:58%}.field-head{gap:7px}.input-wrap{min-width:120px;max-width:148px}.result-pad{padding:16px}.hero h1{font-size:28px}}@media print{@page{size:A4;margin:12mm}body{background:white;color:#111}.wrap{padding:0;max-width:100%}.top{margin-bottom:10px}.actions{display:none}.hero{color:white;print-color-adjust:exact;-webkit-print-color-adjust:exact;padding:22px 26px}.stage{grid-template-columns:1fr 1.12fr;gap:10px}.panel{box-shadow:none}.advanced{display:none}.small-detail{display:none}.below{grid-template-columns:repeat(3,1fr)}.year-grid{grid-template-columns:1fr 1fr}.lead-result,.highlight{print-color-adjust:exact;-webkit-print-color-adjust:exact}.footer{font-size:9px}.footnote{break-inside:avoid}}
+
+    /* Dua Arah production identity: charcoal, vermilion, warm orange. */
+    :root{--ink:#25252a;--dark:#25252a;--teal:#bf3026;--green:#187157;--muted:#686870;--border:#e5e3e5;--bg:#faf9f8;--soft:#fff3ed;--red:#bd3026;--white:#fff;--shadow:0 12px 33px rgba(42,28,30,.055)}
+    .brand-wordmark{display:block;width:min(196px,46vw);height:auto;object-fit:contain}
+    .identity{gap:0}
+    .top{margin-bottom:20px}
+    .hero{position:relative;overflow:hidden;background:linear-gradient(118deg,#25252a 0%,#3a282e 62%,#5c302c 100%);box-shadow:0 15px 42px rgba(49,30,32,.12)}
+    .hero:before{content:'';position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(to bottom,#f58220,#bf3026)}
+    .hero .eyebrow{color:#ffd2ad}
+    .hero p{color:#e6dfe0}
+    .btn.primary{background:#bf3026;border-color:#bf3026}
+    .btn.primary:hover{background:#a32121}
+    .btn:hover{background:#fff3ed}
+    .panel{border-color:#e8e5e5}
+    .bullet{background:#fff0e6;color:#a32622}
+    .field input[type=range]{accent-color:#bf3026}
+    .input-wrap:focus-within{outline:2px solid #ffc8a0;border-color:#f58220}
+    .chip[aria-pressed=true]{background:#fff0e6;color:#a22620;border-color:#eaa297}
+    .advanced summary::after{color:#bf3026}
+    .lead-result{background:#fff4e8;border-color:#f3d6bd}
+    .lead-result span{color:#7d5c44}
+    .lead-result strong{color:#a73520}
+    .year .year-tag{color:#ac3628}
+    .highlight{background:#fffaf6;border-color:#f1e3da}
+    .highlight .name{color:#86675b}
+    .highlight p{color:#86675b}
+    .interpret{border-left-color:#bf3026;background:#fff6f0;color:#71574e}
+    .bar-val{background:#bf3026}
+    .bar-val.money{background:#e5a15a}
+    .footnote{background:#f4f2f1;border-color:#e6e2e2;color:#737076;font-size:10.5px}
+    .footer{color:#827d81}
+    .positive{color:#147351!important}
+    .negative{color:#bb352c!important}
+    @media(max-width:480px){.brand-wordmark{width:162px}}
+    @media print{.hero:before,.lead-result,.highlight{print-color-adjust:exact;-webkit-print-color-adjust:exact}.brand-wordmark{width:182px}}
+
+    /* Forecast graph */
+    .brand-home{display:inline-flex;align-items:center;border-radius:8px;outline-offset:5px}
+    .footer-link{color:#a53024;font-weight:800;text-decoration:none;border-bottom:1px solid #efb398;padding-bottom:2px}
+    .footer-link:hover{color:#78231c;border-bottom-color:#78231c}
+    .projection{margin-top:22px;padding-top:18px;border-top:1px solid var(--border)}
+    .projection-head{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+    .projection-head .section-label{font-size:13px}
+    .chart-sub{font-size:11px;color:var(--muted);margin:3px 0 0}
+    .period-select{display:flex;gap:9px;align-items:center;color:var(--muted);font-size:11px;font-weight:750}
+    .period-select select{font:inherit;color:var(--ink);background:#fff;padding:8px 12px;border:1px solid var(--border);border-radius:9px;min-width:99px;cursor:pointer}
+    .period-select select:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+    .chart-legend{display:flex;gap:16px;flex-wrap:wrap;margin:15px 0 4px;font-size:11px;font-weight:650;color:#68636a}
+    .chart-legend span{display:inline-flex;align-items:center;gap:6px}
+    .chart-legend i{display:inline-block;width:20px;height:4px;border-radius:10px}
+    .chart-legend .legend-benefit{background:#bf3026}
+    .chart-legend .legend-cost{background:#df963c}
+    .chart-shell{position:relative;min-height:140px;touch-action:pan-y}
+    .chart-shell svg{display:block;width:100%;height:auto;overflow:visible;user-select:none}
+    .chart-tip{pointer-events:none;z-index:2;position:absolute;top:6px;left:50%;transform:translateX(-50%);width:min(224px,75%);padding:11px 12px;border-radius:12px;background:#28272d;color:#fff;box-shadow:0 10px 28px #28272d29;font-size:11px;line-height:1.5}
+    .chart-tip[hidden]{display:none!important}
+    .chart-tip strong{display:block;font-size:12px;margin-bottom:5px;color:#ffd4a8}
+    .chart-tip .tip-line{display:flex;justify-content:space-between;align-items:baseline;gap:9px}
+    .chart-tip .tip-line b{font-size:11px;white-space:nowrap}
+    .chart-tip .tip-net{margin-top:5px;padding-top:5px;border-top:1px solid #ffffff28;font-weight:800}
+    .chart-tip .tip-muted{color:#d1cace}
+    .chart-hint{margin:2px 0 0;color:var(--muted);font-size:10.5px}
+    .chart-guide{stroke:#e7e2e0;stroke-width:1}
+    .chart-text{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:12px;fill:#80777a}
+    .chart-line{fill:none;stroke-width:3.8;stroke-linecap:round;stroke-linejoin:round}
+    .chart-line.benefit{stroke:#bf3026}
+    .chart-line.cost{stroke:#df963c}
+    .chart-circle.benefit{fill:#bf3026;stroke:#fff;stroke-width:2}
+    .chart-circle.cost{fill:#df963c;stroke:#fff;stroke-width:2}
+    .chart-focus{stroke:#878085;stroke-dasharray:4 5;stroke-width:1;opacity:.75}
+    @media(max-width:440px){.chart-tip{font-size:10px;width:min(205px,76%);padding:9px 10px}.chart-tip .tip-line b{font-size:10px}.chart-legend{gap:10px;font-size:10px}.projection-head{gap:10px}.chart-sub{font-size:10px}}
+    @media print{.chart-hint{display:none}.chart-tip{display:none!important}.chart-shell{break-inside:avoid}.projection{break-inside:avoid}.footer-link{color:#a53024}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="identity"><a class="brand-home" href="https://duaarahproduction.com" target="_blank" rel="noopener noreferrer" aria-label="Website Dua Arah Production"><img class="brand-wordmark" src="data:image/png;base64,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" width="622" height="89" alt="Dua Arah Production"></a></div>
+    <div class="actions"><button type="button" class="btn" id="resetBtn">Atur ulang</button><button type="button" class="btn" id="copyBtn">Salin ringkasan</button><button type="button" class="btn primary" id="printBtn">Cetak / PDF</button></div>
+  </header>
+  <section class="hero">
+    <div class="eyebrow">Dua Arah Production · Business value</div>
+    <h1>Simulasi manfaat & biaya usaha</h1>
+    <p>Hitung peluang penghematan stok dan bandingkan dengan investasi layanan Dua Arah.</p>
+    
+  </section>
+  <main class="stage">
+    <section class="panel" aria-label="Input kalkulator">
+      <div class="panel-head"><h2>Asumsi & biaya</h2></div>
+      <div class="pad">
+        <div class="group-title"><span class="bullet">1</span> Potensi penghematan</div>
+        <div class="field"><div class="field-head"><label for="lossNum">Estimasi nilai selisih stok per bulan</label><div class="input-wrap"><span class="affix">Rp</span><input id="lossNum" data-key="loss" data-money="true" type="text" inputmode="numeric" inputmode="decimal"></div></div><input id="lossRange" data-range="loss" type="range" min="0" max="30000000" step="100000"><p class="sub">Total seluruh cabang, berdasarkan nilai biaya persediaan.</p></div>
+        <div class="field"><div class="field-head"><label for="reduceNum">Target pengurangan kehilangan stok</label><div class="input-wrap"><input id="reduceNum" data-key="reduce" type="number" min="0" max="100" step="5"><span class="affix">%</span></div></div><input id="reduceRange" data-range="reduce" type="range" min="0" max="100" step="5"><div class="chip-row" role="group" aria-label="Skenario perbaikan"><button class="chip" data-preset="25" type="button">Konservatif · 25%</button><button class="chip" data-preset="50" type="button">Moderat · 50%</button><button class="chip" data-preset="75" type="button">Tinggi · 75%</button><button class="chip" data-preset="90" type="button">90%</button><button class="chip" data-preset="100" type="button">100%</button></div><p class="sub">Contoh: 75% dari selisih Rp5 juta setara Rp3,75 juta potensi penghematan per bulan.</p></div>
+        <div class="divide"></div>
+        <div class="group-title"><span class="bullet">2</span> Biaya layanan</div>
+        <div class="field"><div class="field-head"><label for="devNum">Biaya pengembangan (sekali)</label><div class="input-wrap"><span class="affix">Rp</span><input id="devNum" data-key="dev" data-money="true" type="text" inputmode="numeric"></div></div><input id="devRange" data-range="dev" type="range" min="0" max="60000000" step="500000"></div>
+        <div class="field"><div class="field-head"><label for="year1Num">Biaya bulanan tahun 1</label><div class="input-wrap"><span class="affix">Rp</span><input id="year1Num" data-key="year1" data-money="true" type="text" inputmode="numeric"></div></div><input id="year1Range" data-range="year1" type="range" min="0" max="5000000" step="50000"></div>
+        <div class="field"><div class="field-head"><label for="year2Num">Biaya bulanan tahun 2+</label><div class="input-wrap"><span class="affix">Rp</span><input id="year2Num" data-key="year2" data-money="true" type="text" inputmode="numeric"></div></div><input id="year2Range" data-range="year2" type="range" min="0" max="5000000" step="50000"><p class="sub">Tanpa biaya pengembangan ulang.</p></div>
+      </div>
+      <details class="advanced" id="advanced">
+        <summary>Pengaturan tambahan</summary>
+        <div class="pad">
+          
+          <div class="field"><div class="field-head"><label for="outletsNum">Jumlah outlet</label><div class="input-wrap"><input id="outletsNum" data-key="outlets" type="number" min="1" max="99" step="1"><span class="affix">outlet</span></div></div></div>
+          <div class="field"><div class="field-head"><label for="revenueNum">Omzet gabungan per bulan</label><div class="input-wrap"><span class="affix">Rp</span><input id="revenueNum" data-key="revenue" data-money="true" type="text" inputmode="numeric"></div></div></div>
+          <div class="field"><div class="field-head"><label for="hostingNum">Hosting / infrastruktur per bulan</label><div class="input-wrap"><span class="affix">Rp</span><input id="hostingNum" data-key="hosting" data-money="true" type="text" inputmode="numeric"></div></div></div>
+          <div class="divide"></div>
+          <label class="checkbox-line" for="autoLoss"><input type="checkbox" id="autoLoss"> Hitung estimasi selisih otomatis dari omzet & biaya bahan</label>
+          
+          <div id="autoLossFields" class="hide">
+            <div class="field"><div class="field-head"><label for="materialNum">Biaya bahan (% omzet)</label><div class="input-wrap"><input id="materialNum" data-key="material" type="number" min="0" max="100" step="1"><span class="affix">%</span></div></div></div>
+            <div class="field"><div class="field-head"><label for="varianceNum">Selisih (% nilai bahan)</label><div class="input-wrap"><input id="varianceNum" data-key="variance" type="number" min="0" max="100" step=".5"><span class="affix">%</span></div></div></div>
+          </div>
+          <div class="divide"></div>
+          <p class="group-title" style="margin:0 0 8px">Nilai efisiensi waktu (opsional)</p>
+          <div class="field"><div class="field-head"><label for="hoursNum">Total jam audit yang dihemat per bulan</label><div class="input-wrap"><input id="hoursNum" data-key="hours" type="number" min="0" step="1"><span class="affix">jam</span></div></div></div>
+          <div class="field"><div class="field-head"><label for="hourlyNum">Estimasi nilai per jam</label><div class="input-wrap"><span class="affix">Rp</span><input id="hourlyNum" data-key="hourly" data-money="true" type="text" inputmode="numeric"></div></div><p class="sub">Nilai waktu ditampilkan terpisah dari ROI.</p></div>
+        </div>
+      </details>
+    </section>
+    <section class="panel" aria-live="polite" aria-label="Hasil kalkulator">
+      <div class="panel-head"><h2>Ringkasan manfaat & biaya</h2></div>
+      <div class="result-pad">
+        <div class="lead-result"><span>Potensi penghematan stok per bulan</span><strong id="monthlySave">Rp0</strong></div>
+        <div class="year-grid">
+          <article class="year"><div class="year-tag">Tahun 1</div><h3>Biaya tahun pertama</h3><div class="number" id="cost1">Rp0</div><div class="caption">Development + 12 bulan layanan</div><div class="line"></div><div class="caption">Manfaat stok selama 12 bulan</div><strong id="benefit1">Rp0</strong><div class="caption" style="margin-top:7px">Selisih manfaat − biaya</div><div class="net" id="net1">Rp0</div></article>
+          <article class="year"><div class="year-tag">Tahun 2</div><h3>Biaya tahun kedua</h3><div class="number" id="cost2">Rp0</div><div class="caption">12 bulan layanan, tanpa biaya pengembangan</div><div class="line"></div><div class="caption">Manfaat stok selama 12 bulan</div><strong id="benefit2">Rp0</strong><div class="caption" style="margin-top:7px">Selisih manfaat − biaya</div><div class="net" id="net2">Rp0</div></article>
+        </div>
+        <div class="highlight"><div class="name">Estimasi manfaat bersih selama <span id="horizonName">5 tahun</span></div><div class="value" id="netHorizon">Rp0</div></div>
+        <div class="interpret" id="interpret">Sesuaikan asumsi untuk melihat hasil.</div>
+        <div class="projection">
+        <div class="projection-head">
+          <div>
+            <h3 class="section-label">Proyeksi manfaat &amp; biaya</h3>
+            <p class="chart-sub">Akumulasi sejak awal penggunaan</p>
+          </div>
+          <label class="period-select">Periode
+            <select id="horizonSelect" aria-label="Pilih periode simulasi">
+              <option value="2">2 tahun</option>
+              <option value="3">3 tahun</option>
+              <option value="4">4 tahun</option>
+              <option value="5" selected>5 tahun</option>
+              <option value="6">6 tahun</option>
+              <option value="7">7 tahun</option>
+              <option value="8">8 tahun</option>
+              <option value="9">9 tahun</option>
+              <option value="10">10 tahun</option>
+            </select>
+          </label>
+        </div>
+        <div class="chart-legend" aria-hidden="true">
+          <span><i class="legend-benefit"></i>Potensi penghematan</span>
+          <span><i class="legend-cost"></i>Total biaya</span>
+        </div>
+        <div class="chart-shell" id="chartShell">
+          <svg id="projectionSvg" viewBox="0 0 740 290" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Grafik akumulasi potensi penghematan dan biaya berdasarkan tahun"></svg>
+          <div class="chart-tip" id="chartTip" hidden></div>
+        </div>
+        <p class="chart-hint">Arahkan kursor atau ketuk grafik untuk melihat rincian per tahun.</p>
+      </div>
+      <details class="small-detail" id="calcDetails"><summary>Detail perhitungan & ROI</summary><div class="detail-content"><table class="calc-table"><tbody>
+          <tr><td>Development (hanya tahun 1)</td><td id="devDetail">—</td></tr>
+          <tr><td>Layanan tahun 1 (12 bulan)</td><td id="maintenance1Detail">—</td></tr>
+          <tr><td>Layanan tahun 2+ (<span id="maintenancePeriod">48 bulan</span>)</td><td id="maintenance2Detail">—</td></tr>
+          <tr><td>Hosting selama <span id="hostingPeriod">60 bulan</span></td><td id="hostingDetail">—</td></tr>
+          <tr><td><strong>Total biaya <span id="totalPeriod">5 tahun</span></strong></td><td id="totalCostDetail">—</td></tr>
+          <tr><td>Estimasi ROI <span id="roiPeriod">5 tahun</span></td><td id="roiDetail">—</td></tr>
+          <tr><td>Perkiraan bulan balik modal</td><td id="paybackDetail">—</td></tr>
+          <tr><td>Rasio selisih terhadap omzet</td><td id="ratioDetail">—</td></tr>
+          <tr><td>Efisiensi waktu audit per bulan</td><td id="timeDetail">—</td></tr>
+        </tbody></table></div></details>
+      </div>
+    </section>
+  </main>
+  <aside class="footnote">Perhitungan bersifat simulasi, bukan jaminan hasil. Manfaat bergantung pada kondisi dan implementasi operasional.</aside>
+  <footer class="footer"><span>© Dua Arah Production</span><a class="footer-link" href="https://duaarahproduction.com" target="_blank" rel="noopener noreferrer" aria-label="Kunjungi website Dua Arah Production">duaarahproduction.com <span aria-hidden="true">↗</span></a></footer>
+</div>
+<script>
+(()=>{'use strict';
+  const defaults={loss:5000000,reduce:75,dev:10000000,year1:2000000,year2:2000000,outlets:3,revenue:150000000,hosting:0,material:40,variance:8,hours:0,hourly:35000};
+  const caps={loss:1e12,reduce:100,dev:1e12,year1:1e12,year2:1e12,outlets:99,revenue:1e13,hosting:1e12,material:100,variance:100,hours:1e5,hourly:1e10};
+  const $=id=>document.getElementById(id),cur=n=>'Rp'+Math.round(n).toLocaleString('id-ID'),percent=n=>n.toLocaleString('id-ID',{maximumFractionDigits:1})+'%';
+  const state={...defaults};let auto=false;let horizon=5;let chartPoints=[];let activeYear=null;
+  const getLoss=()=>auto?state.revenue*state.material/100*state.variance/100:state.loss;
+  const setText=(id,t)=>{$(id).textContent=t};
+  function updateInputs(){for(const [key,v] of Object.entries(state)){const el=document.querySelector('[data-key="'+key+'"]');if(el&&el!==document.activeElement)el.value=el.dataset.money==='true'?Math.round(v).toLocaleString('id-ID'):String(v);const slider=document.querySelector('[data-range="'+key+'"]');if(slider)slider.value=String(Math.min(Number(slider.max),Math.max(Number(slider.min),v)));}}
+  const costAt=y=>state.dev+12*Math.min(y,1)*(state.year1+state.hosting)+12*Math.max(0,y-1)*(state.year2+state.hosting);
+  function result(){const month=getLoss()*state.reduce/100;const c1=costAt(1),c2=12*(state.year2+state.hosting),annualBenefit=month*12,totalCost=costAt(horizon),totalBenefit=annualBenefit*horizon,net1=annualBenefit-c1,net2=annualBenefit-c2,net=totalBenefit-totalCost;
+    let payback=null;for(let m=1;m<=horizon*12;m++){const cost=state.dev+Math.min(m,12)*(state.year1+state.hosting)+Math.max(m-12,0)*(state.year2+state.hosting);if(month*m>=cost){payback=m;break;}}
+    return {month,c1,c2,annualBenefit,totalCost,totalBenefit,net1,net2,net,payback,roi:totalCost>0?net/totalCost*100:null,ratio:state.revenue>0?getLoss()/state.revenue*100:null,productivity:state.hours*state.hourly};}
+  function setMoneyNet(id,v){setText(id,(v<0?'−':'')+cur(Math.abs(v)));$(id).classList.toggle('negative',v<0);$(id).classList.toggle('positive',v>=0);}
+  function compact(n){const abs=Math.abs(n);if(abs>=1e9)return (n/1e9).toLocaleString('id-ID',{maximumFractionDigits:1})+' M';if(abs>=1e6)return (n/1e6).toLocaleString('id-ID',{maximumFractionDigits:1})+' jt';if(abs>=1e3)return (n/1e3).toLocaleString('id-ID',{maximumFractionDigits:0})+' rb';return Math.round(n).toLocaleString('id-ID');}
+  const escapeHtml=str=>String(str).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  function showTooltip(year){if(year==null||!chartPoints[year])return;
+    activeYear=year;const p=chartPoints[year],tip=$('chartTip');
+    tip.innerHTML='<strong>'+(year===0?'Awal proyek':'Tahun '+year)+'</strong>'+ '<div class="tip-line"><span>Potensi penghematan</span><b>'+escapeHtml(cur(p.benefit))+'</b></div>'+'<div class="tip-line"><span>Total biaya</span><b>'+escapeHtml(cur(p.cost))+'</b></div>'+'<div class="tip-line tip-net"><span>Selisih manfaat − biaya</span><b>'+escapeHtml((p.net<0?'−':'')+cur(Math.abs(p.net)))+'</b></div>';
+    tip.hidden=false;const width=$('chartShell').getBoundingClientRect().width;const visualX=p.x/740*width;
+    tip.style.left=Math.max(110,Math.min(width-110,visualX))+'px';
+    const line=$('chartCrosshair');if(line){line.setAttribute('x1',p.x);line.setAttribute('x2',p.x);line.style.display='block';}
+  }
+  function hideTooltip(){activeYear=null;$('chartTip').hidden=true;const l=$('chartCrosshair');if(l)l.style.display='none';}
+  function renderChart(month){const years=horizon,svg=$('projectionSvg');const W=740,H=290,L=63,R=18,T=24,B=42,ph=H-T-B,pw=W-L-R;const all=[];
+    for(let y=0;y<=years;y++){const benefit=month*12*y,cost=costAt(y);all.push({year:y,benefit,cost,net:benefit-cost});}
+    const peak=Math.max(1,...all.flatMap(p=>[p.benefit,p.cost]))*1.1;
+    const yy=v=>T+ph-(v/peak)*ph,xx=y=>L+pw*(y/years);
+    chartPoints=all.map(p=>({...p,x:xx(p.year),benefitY:yy(p.benefit),costY:yy(p.cost)}));
+    const grid=Array.from({length:5},(_,j)=>{const v=peak*j/4,y=yy(v);return `<line class="chart-guide" x1="${L}" y1="${y.toFixed(1)}" x2="${W-R}" y2="${y.toFixed(1)}"/><text class="chart-text" x="${L-11}" y="${(y+4).toFixed(1)}" text-anchor="end">${escapeHtml(compact(v))}</text>`;}).join('');
+    const axis=chartPoints.filter(p=>years<=5||p.year%2===0||p.year===years).map(p=>`<text class="chart-text" x="${p.x.toFixed(1)}" y="${H-12}" text-anchor="middle">${p.year===0?'Mulai':'Th '+p.year}</text>`).join('');
+    const linePath=key=>chartPoints.map((p,i)=>(i===0?'M':'L')+p.x.toFixed(1)+' '+p[key].toFixed(1)).join(' ');
+    const points=chartPoints.map(p=>`<circle class="chart-circle benefit" cx="${p.x}" cy="${p.benefitY}" r="4"/><circle class="chart-circle cost" cx="${p.x}" cy="${p.costY}" r="4"/>`).join('');
+    const targets=chartPoints.map(p=>`<rect x="${Math.max(L,p.x-pw/(years*2))}" y="${T}" width="${Math.min(pw/years,W-R-Math.max(L,p.x-pw/(years*2)))}" height="${ph}" fill="transparent" tabindex="0" class="chart-target" data-year="${p.year}" role="button" aria-label="${p.year===0?'Awal proyek':'Tahun '+p.year}: penghematan ${cur(p.benefit)}, biaya ${cur(p.cost)}"/>`).join('');
+    svg.innerHTML=`<title>Akumulasi potensi penghematan dan biaya selama ${years} tahun</title>${grid}${axis}<path class="chart-line benefit" d="${linePath('benefitY')}"/><path class="chart-line cost" d="${linePath('costY')}"/>${points}<line class="chart-focus" id="chartCrosshair" x1="0" x2="0" y1="${T}" y2="${H-B}" style="display:none"/>${targets}`;
+    svg.querySelectorAll('.chart-target').forEach(el=>{el.addEventListener('focus',()=>showTooltip(Number(el.dataset.year)));el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();showTooltip(Number(el.dataset.year));}});});
+    if(activeYear!==null)showTooltip(Math.min(activeYear,years));
+  }
+  function update(){const m=result();setText('monthlySave',cur(m.month));setText('cost1',cur(m.c1));setText('cost2',cur(m.c2));setText('benefit1',cur(m.annualBenefit));setText('benefit2',cur(m.annualBenefit));setMoneyNet('net1',m.net1);setMoneyNet('net2',m.net2);setMoneyNet('netHorizon',m.net);setText('horizonName',horizon+' tahun');
+    setText('devDetail',cur(state.dev));setText('maintenance1Detail',cur(state.year1*12));setText('maintenance2Detail',cur(state.year2*12*(horizon-1)));setText('maintenancePeriod',(horizon-1)*12+' bulan');setText('hostingPeriod',horizon*12+' bulan');setText('totalPeriod',horizon+' tahun');setText('roiPeriod',horizon+' tahun');setText('hostingDetail',cur(state.hosting*12*horizon));setText('totalCostDetail',cur(m.totalCost));setText('roiDetail',m.roi===null?'Tidak dihitung (biaya Rp0)':percent(m.roi));setText('paybackDetail',m.payback===null?'Belum tercapai dalam '+horizon+' tahun':'Bulan ke-'+m.payback);setText('ratioDetail',m.ratio===null?'Omzet belum diisi':percent(m.ratio));setText('timeDetail',cur(m.productivity)+' (nilai waktu, bukan kas)');
+    const cheaper=m.c1-m.c2;const headline=cheaper>0?`Tahun ke-2 diperkirakan <strong>${cur(cheaper)} lebih murah</strong> daripada tahun pertama, karena pengembangan hanya dibayar sekali.`:cheaper===0?'Biaya tahun pertama dan berikutnya pada simulasi ini sama.':'Biaya tahun kedua lebih tinggi berdasarkan pilihan biaya saat ini.';
+    const qualifier=m.net>=0?`Potensi manfaat selama ${horizon} tahun melebihi biaya sebesar <strong>${cur(m.net)}</strong>.`:`Potensi biaya selama ${horizon} tahun melebihi manfaat sebesar <strong>${cur(-m.net)}</strong>.`;
+    $('interpret').innerHTML=headline+'<br>'+qualifier;
+    if(auto){document.querySelector('[data-key="loss"]').value=Math.round(getLoss()).toLocaleString('id-ID');const r=document.querySelector('[data-range="loss"]');r.value=String(Math.min(Number(r.max),getLoss()));}
+    document.querySelectorAll('[data-preset]').forEach(b=>b.setAttribute('aria-pressed',Number(b.dataset.preset)===state.reduce?'true':'false'));
+    renderChart(m.month);
+  }
+  function setValue(key,value){const v=Number(value);if(!Number.isFinite(v))return;const clamped=Math.max(key==='outlets'?1:0,Math.min(caps[key],v));state[key]=key==='outlets'?Math.round(clamped):clamped;updateInputs();update();}
+  document.querySelectorAll('[data-key]').forEach(el=>{el.addEventListener('input',()=>{if(el.value!=='')setValue(el.dataset.key,el.dataset.money==='true'?el.value.replace(/[^0-9]/g,''):el.value)});el.addEventListener('change',()=>{if(el.value===''){updateInputs();return}setValue(el.dataset.key,el.dataset.money==='true'?el.value.replace(/[^0-9]/g,''):el.value)});el.addEventListener('blur',updateInputs);});
+  document.querySelectorAll('[data-range]').forEach(el=>el.addEventListener('input',()=>setValue(el.dataset.range,el.value)));
+  document.querySelectorAll('[data-preset]').forEach(b=>b.addEventListener('click',()=>setValue('reduce',Number(b.dataset.preset))));
+  $('autoLoss').addEventListener('change',e=>{const previousLoss=getLoss();auto=e.target.checked;$('autoLossFields').classList.toggle('hide',!auto);document.querySelector('[data-key="loss"]').disabled=auto;document.querySelector('[data-range="loss"]').disabled=auto;if(!auto){state.loss=Math.round(previousLoss);}updateInputs();update();});
+  $('horizonSelect').addEventListener('change',e=>{horizon=Math.max(2,Math.min(10,Number(e.target.value)||5));hideTooltip();update();});
+  $('resetBtn').addEventListener('click',()=>{Object.assign(state,defaults);auto=false;horizon=5;$('horizonSelect').value='5';$('autoLoss').checked=false;$('autoLossFields').classList.add('hide');document.querySelector('[data-key="loss"]').disabled=false;document.querySelector('[data-range="loss"]').disabled=false;hideTooltip();updateInputs();update();});
+  const svg=$('projectionSvg');svg.addEventListener('pointermove',e=>{const box=svg.getBoundingClientRect();const local=(e.clientX-box.left)/box.width*740;const i=Math.max(0,Math.min(horizon,Math.round((local-63)/(740-63-18)*horizon)));showTooltip(i);});
+  svg.addEventListener('pointerleave',e=>{if(e.pointerType!=='touch')hideTooltip();});
+  svg.addEventListener('focusout',e=>{if(!svg.contains(e.relatedTarget))hideTooltip();});
+  $('printBtn').addEventListener('click',()=>window.print());
+  $('copyBtn').addEventListener('click',async()=>{const m=result();const lines=[
+    'DUA ARAH — SIMULASI MANFAAT & BIAYA',
+    'Selisih stok / bulan (estimasi): '+cur(getLoss()),
+    'Target pengurangan kehilangan stok: '+percent(state.reduce),
+    'Potensi stok terselamatkan / bulan: '+cur(m.month),
+    'Development awal (dibayar satu kali): '+cur(state.dev),
+    'Layanan tahun 1: '+cur(state.year1)+'/bulan × 12',
+    'Layanan tahun 2 dan seterusnya: '+cur(state.year2)+'/bulan',
+    'Hosting tambahan: '+cur(state.hosting)+'/bulan',
+    'Total biaya tahun 1: '+cur(m.c1),
+    'Total biaya tahun 2: '+cur(m.c2),
+    'Proyeksi periode: '+horizon+' tahun',
+    'Total biaya periode: '+cur(m.totalCost),
+    'Potensi penghematan periode: '+cur(m.totalBenefit),
+    'Selisih manfaat − biaya: '+(m.net<0?'-':'')+cur(Math.abs(m.net)),
+    'Perkiraan ROI stok: '+(m.roi===null?'—':percent(m.roi)),
+    'Simulasi berdasarkan asumsi, bukan jaminan hasil.',
+    'https://duaarahproduction.com'];
+    const val=lines.join('\n');let done=false;try{await navigator.clipboard.writeText(val);done=true;}catch(e){const area=document.createElement('textarea');area.value=val;document.body.appendChild(area);area.select();done=document.execCommand('copy');area.remove();}
+    if(done){const b=$('copyBtn'),old=b.textContent;b.textContent='Tersalin ✓';setTimeout(()=>b.textContent=old,1600);}
+  });
+  updateInputs();update();
+})();
+</script>
+</body>
+</html>
